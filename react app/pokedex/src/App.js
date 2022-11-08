@@ -3,6 +3,8 @@ import './App.css';
 import Logo from './components/Logo';
 import BestPokemon from './components/BestPokemon';
 import CaughtPokemon from './components/CaughtPokemon';
+import PokemonMovesSelector from './components/PokemonMovesSelector';
+import PokemonCity from './components/PokemonCity';
 
 const App = () => {
   const appName = "Pokedex";
@@ -17,6 +19,8 @@ const App = () => {
        <Logo appName={appName} handleClicked={logWhenClicked} />
        <BestPokemon abilities={abilities}/>
        <CaughtPokemon date={date}/>
+       <PokemonMovesSelector />
+       <PokemonCity />
     </div>
   );
 };
